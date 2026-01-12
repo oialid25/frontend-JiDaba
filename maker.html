@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/middle.css">
+    <link rel="stylesheet" href="Styles/popups.css">
+    <link rel="stylesheet" href="Styles/maker.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Erica+One&family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Erica+One&family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Erica+One&family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icons/burger.png">
+
+    <title>JiDaba</title>
+
+    <style>
+        body,html {
+            margin: 0;
+        }
+
+        body,html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            height: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main >
+        <header>
+            <div id="left" onclick="window.location.href = 'index.html'">
+                <img id="burger" src="icons/burger.png" alt="">
+                <p style="font-family: Roboto; color: #383A4C;"><span
+                        style="color: #F94600; margin-left: 5px;">Ji</span>Daba</p>
+            </div>
+
+            <nav id="navbar">
+                <a href="index.html">
+                    <p id="navbar-element">Home</p>
+                </a>
+                <a href="menu.html">
+                    <p id="navbar-element">Menu</p>
+                </a>
+                <a href=" aboutus.html">
+                    <p id="navbar-element">About us</p>
+                </a>
+                <a href=" service.html">
+                    <p id="navbar-element">service </p>
+                </a>
+            </nav>
+
+            <div id="right">
+
+                <div id="login">
+                    <img style="display: inline-block; width: 25px;" src="icons/login.png" alt="">
+                    <p style="display: inline-block;">Log in</p>
+                </div>
+                <button id="signup">Sign Up</button>
+                <div id="shopping">
+                    <img src="icons/shopping-cart.svg" style="width: 30px; cursor: pointer;" alt="">
+                    <div id="counter">0</div>
+                </div>
+
+
+
+            </div>
+            <div id="burger-menu">
+                <img src="icons/menu.svg" style="width: 40px;">
+            </div>
+
+
+
+        </header>
+
+        <div id="middle">
+            <div id="ingredients">
+                <h1 id="title-ingredients"></h1>
+                <div id="ingredients-meat">
+
+                    <div onclick="add_Beef()" id="element-imgredients">
+                        <h1>Beef</h1>
+                        <img src="imgs/ingredients/patty/1.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Chicken()"  id="element-imgredients">
+                        <h1>Chicken</h1>
+                        <img src="imgs/ingredients/patty/2.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Vegan()" id="element-imgredients">
+                        <h1>Vegan</h1>
+                        <img src="imgs/ingredients/patty/3.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Fish()" id="element-imgredients">
+                        <h1>Fish</h1>
+                        <img src="imgs/ingredients/patty/4.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Eggs()" id="element-imgredients">
+                        <h1>Eggs</h1>
+                        <img src="imgs/ingredients/patty/5.png" alt="">
+                        <p style="margin-top: 50px;">100 Kcal</p>
+                        <p>10 MAD </p>
+                    </div>
+                    <div onclick="add_Beacon()" id="element-imgredients">
+                        <h1>Beacon</h1>
+                        <img src="imgs/ingredients/patty/6.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+
+
+                </div>
+                <div id="ingredients-vegetables">
+
+                    <div onclick="add_Tomatos()" id="element-imgredients">
+                        <h1>Tomatos</h1>
+                        <img src="imgs/ingredients/vegetables/1.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Pickles()" id="element-imgredients">
+                        <h1>Pickles</h1>
+                        <img src="imgs/ingredients/vegetables/2.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Onion()" id="element-imgredients">
+                        <h1>Onion</h1>
+                        <img src="imgs/ingredients/vegetables/3.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Lettuce()" id="element-imgredients">
+                        <h1>Lettuce</h1>
+                        <img src="imgs/ingredients/vegetables/4.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Jalapeno()" id="element-imgredients">
+                        <h1>Jalapeno</h1>
+                        <img src="imgs/ingredients/vegetables/5.png" alt="">
+                        <p style="margin-top: 50px;">100 Kcal</p>
+                        <p>10 MAD </p>
+                    </div>
+                    <div onclick="add_Mshrom()" id="element-imgredients">
+                        <h1>Mshrom</h1>
+                        <img src="imgs/ingredients/vegetables/6.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+
+                </div>
+                <div  id="ingredients-cheeses">
+
+                    <div onclick="add_Swiss()" id="element-imgredients">
+                        <h1>Swiss</h1>
+                        <img src="imgs/ingredients/cheese/1.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Italian()" id="element-imgredients">
+                        <h1>Italian</h1>
+                        <img src="imgs/ingredients/cheese/2.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Creamy()" id="element-imgredients">
+                        <h1>Creamy</h1>
+                        <img src="imgs/ingredients/cheese/5.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Blue()" id="element-imgredients">
+                        <h1>Blue</h1>
+                        <img src="imgs/ingredients/cheese/4.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Cheddar()" id="element-imgredients">
+                        <h1>Cheddar</h1>
+                        <img src="imgs/ingredients/cheese/3.png" alt="">
+                        <p style="margin-top: 50px;">100 Kcal</p>
+                        <p>10 MAD </p>
+                    </div>
+                    
+                    <div onclick="add_Gourmet()" id="element-imgredients">
+                        <h1>Gourmet</h1>
+                        <img src="imgs/ingredients/cheese/6.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+
+                </div>
+                <div id="ingredients-sources">
+
+                    <div onclick="add_Ketchup()" id="element-imgredients">
+                        <h1>Ketchup</h1>
+                        <img src="imgs/ingredients/sauce/1.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Mayo()" id="element-imgredients">
+                        <h1>Mayo</h1>
+                        <img src="imgs/ingredients/sauce/2.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_BigMac()" id="element-imgredients">
+                        <h1>Big Mac</h1>
+                        <img src="imgs/ingredients/sauce/5.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Hot()" id="element-imgredients">
+                        <h1>Hot </h1>
+                        <img src="imgs/ingredients/sauce/4.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+                    <div onclick="add_Mustard()" id="element-imgredients">
+                        <h1>Mustard</h1>
+                        <img src="imgs/ingredients/sauce/3.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD </p>
+                    </div>
+                    <div onclick="add_BBQ()" id="element-imgredients">
+                        <h1>BBQ</h1>
+                        <img src="imgs/ingredients/sauce/6.png" alt="">
+                        <p>100 Kcal</p>
+                        <p>10 MAD</p>
+                    </div>
+
+                </div>
+                <div style="display: none;" id="Bill">
+                    .
+                </div>
+
+                <div id="ingredients-bottum">
+                    
+                     <button id="previous" onclick="remove_from_bar() ">previous</button>
+                     <button id="Next" onclick="add_to_bar()">Next</button>
+                     <button id="gohome" onclick="window.location.href = 'index.html' ">Donne</button>                </div>
+                <div id="loading-bar">
+                    <div id="complet"><span id="complet-pourcentage" style="position:absolute; right: 10px;">0%</span>‎
+                    </div>
+                    <div id="not complet"></div>
+                </div>
+                
+            </div>
+
+
+            <div id="burger-meaker">
+                <div id="bun-bottum">‎ </div>
+
+
+                
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <footer style="margin-top: 20px;">
+        <div>
+            <p> JiDaba's est assujetti à la loi N° 09-08, relative à la protection des personnes physiques à l'égard du
+                traitement des données personnelles
+                et elle a pris ses dispositions pour en respecter la lettre et l'esprit.
+            </p>
+            <p>Plan du site | Contactez-nous | Mentions légales | © Copyright JiDaba's Maroc 2024 </p>
+            <p>Conception et réalisation : oualid amtout ASED
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile" target="_blank">
+                <i class="fa fa-facebook fa-2x"></i>
+            </a>
+
+            <a href="https://www.instagram.com/__4xzj/" target="_blank">
+                <i class="fa fa-instagram fa-2x"></i>
+            </a>
+
+            <a href="https://twitter.com/profile" target="_blank">
+                <i class="fa fa-twitter fa-2x"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@oualidamtout" target="_blank">
+                <i class="fa fa-youtube fa-2x"></i>
+            </a>
+
+            <a href="https://github.com/oialid25" target="_blank">
+                <i class="fa fa-github fa-2x"></i>
+            </a>
+        </div>
+
+    </footer>
+
+    
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

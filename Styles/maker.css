@@ -1,0 +1,294 @@
+/*meat*/
+
+#ingredients-meat {
+    
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    row-gap: 20px;
+    height: auto;
+
+}
+
+#ingredients-meat div:hover {
+    padding: 10px;
+    background-color: #FFEEEF;
+
+}
+
+
+#ingredients-meat img {
+    width: 100px;
+
+}
+/*vegetables*/
+
+
+#ingredients-vegetables {
+     
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    row-gap: 20px;
+    height: auto;
+    display: none;
+}
+#ingredients-vegetables div:hover {
+    padding: 10px;
+    background-color: #FFEEEF;
+
+}
+
+
+#ingredients-vegetables img {
+    width: 100px;
+
+}
+
+/*cheeses*/
+
+
+#ingredients-cheeses {
+     
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    row-gap: 20px;
+    height: auto;
+    display: none;
+}
+
+#ingredients-cheeses div:hover {
+    padding: 10px;
+    background-color: #FFEEEF;
+
+}
+
+
+#ingredients-cheeses img {
+    width: 100px;
+
+}
+/*sources*/
+
+
+#ingredients-sources {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    row-gap: 20px;
+    height: auto;
+    display: none;
+}
+
+#ingredients-sources div:hover {
+    padding: 10px;
+    background-color: #FFEEEF;
+
+}
+
+
+#ingredients-sources img {
+    width: 100px;
+
+}
+
+
+
+#element-imgredients {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(96, 96, 96);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 160px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 0px;
+    border: 3px solid #ff5a1f;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    
+
+}
+
+
+
+
+
+
+
+#middle {
+    margin-bottom: 10px;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+#ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    margin-left: 80px;
+}
+
+#ingredients-bottum {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#ingredients-bottum button {
+    background-color: #ff5a1f;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+#gohome{
+    display: none;
+}
+#ingredients-bottum button:hover {
+    opacity: 0.85;
+    padding: 11px 25px;
+}
+
+#burger-meaker {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    
+    margin: 10px;
+    margin-left: 80px;
+}
+#loading-bar{
+    margin-top: 30px;
+    width: 90%;
+    height: 20px;
+    background-color: white;
+    border:4px solid rgb(96, 96, 96);
+    border-radius: 10px;
+    flex: row;
+
+}
+#complet{
+    border-radius: 6px;
+    color: rgb(96, 96, 96);
+    position: relative;
+    background-color: #ff5a1f;
+    width: 0%;
+    height: 100%;
+}
+
+
+#burger-meaker{
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 0;
+    align-items: center;
+    justify-content: end;
+
+}
+#burger-meaker div{
+    margin: 0;
+    padding: 0;
+
+}
+
+#bun-bottum {
+    width: 48%;
+    height: 12%;
+    background: linear-gradient(to bottom, #fcead6 5%, #e6be8a 60%, #c69c6d 95%);
+    border-radius: 0 0 40px 40px;
+    border: 3px solid #a67c52;
+    
+    margin: 0; 
+}
+#tomato{
+    width: 45%;
+    height: 10%;
+    background-color: #ff6208;
+    border-radius: 10px ;
+}
+
+
+#Bill{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+#Bill div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 70%;
+    
+    font-family: 'Poppins', sans-serif;
+    color: rgb(96, 96, 96);
+    margin-bottom: 10px;
+    
+    border: 3px dashed rgb(96, 96, 96);
+}
+
+#Bill p{
+    margin: 10% 20%;
+
+}
+
+
+
+
+@media(max-width:940px){
+    #middle{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #burger-meaker{
+        margin-top: 200px;
+        width: 90%;
+        height: 200px;
+    }
+    #burger-meaker div{
+        min-height: 50px;
+    }
+    #Bill div{
+        width: 70vw;
+    }
+    
+}

@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+}
+footer{
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+    height: 200px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    width: 895.6px;
+
+}
+footer a {
+    text-decoration: none;
+}
+
+#web-footer{
+
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+    height: 200px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#web-footer div{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    width: 895.6px;
+
+}
+
+
+body{
+    margin: 0;
+}
+#web-footer a {
+    text-decoration: none;
+}
+i{
+    margin: 10px;
+    color: white;
+
+
+}
+
+i:hover{
+    margin: 10px;
+    color: #F94600;
+    
+}
+#mobile-footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    width: 94%;
+    height: auto;
+    color: #333333;
+    background-color: white;
+    padding: 2px 15px;
+}
+
+#mobile-footer div{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mobile-footer img{
+    height: 100%;
+}
+
+#mobile-footer p{
+    margin: 0;
+    font-family: Roboto;
+}
+
+
+@media(max-width:500px){
+    #web-footer{
+        display: none;
+    }
+    #mobile-footer{
+        display: flex;
+    }
+    #mini-menu{
+        margin-bottom: 100px;
+    }
+    #parent{
+        margin-bottom: 100px;
+    }
+    #burger-meaker{
+        margin-bottom: 500px;
+    }
+}   
+
+@media(min-width:500px){
+    #web-footer{
+        display: flex;
+    }
+    #mobile-footer{
+        
+        display: none;
+    }
+    #mini-menu{
+        margin-bottom: 0;
+    }
+} 
